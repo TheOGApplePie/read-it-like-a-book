@@ -1,0 +1,4 @@
+<div *ngIf="pastedText">{{pastedText}}</div>
+<div *ngIf="uploadedFile">
+    <iframe #myIFrame [src]="uploadedFile" frameborder="0"></iframe>
+</div>

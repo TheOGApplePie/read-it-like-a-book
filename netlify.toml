@@ -1,9 +1,4 @@
 [build]
   base = "dist"
-  command = "npm start"
+  command = "npm run build:prod"
   publish = "dist/read-it-like-a-book"
-
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200

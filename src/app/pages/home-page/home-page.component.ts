@@ -26,7 +26,6 @@ this.initForm()
     })
   }
   handleFile(file:any){
-    alert(typeof file)
     this.fileReader.readAsDataURL(file.target.files[0]);
     this.fileReader.onload = ()=>{
       // console.log(this.fileReader.result)
@@ -44,8 +43,9 @@ this.initForm()
     if(this.contentForm.value.pastedText){
       localStorage.setItem('pastedText',JSON.stringify(this.contentForm.value.pastedText));
     }
-    (this.contentForm.value.uploadedFile || this.contentForm.value.pastedText) ? this.viewContent() : null;
-    
+    if(this.contentForm.value.uploadedFile || this.contentForm.value.pastedText){
+      this.viewContent()
+    }    
     // localStorage.setItem('content',JSON.stringify(content));
     // this.viewContent();
 

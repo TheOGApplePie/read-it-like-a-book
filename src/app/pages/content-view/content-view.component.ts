@@ -15,7 +15,7 @@ export class ContentViewComponent implements OnInit {
     private sanitizer: DomSanitizer
   ) { }
   ngOnInit(): void {
-    this.uploadedFile = this.sanitizer.bypassSecurityTrustResourceUrl(JSON.parse(localStorage.getItem('uploadedFile')!));
+    // this.uploadedFile = this.sanitizer.bypassSecurityTrustResourceUrl(JSON.parse(localStorage.getItem('uploadedFile')!));
     // this.myIFrame.contentWindow!.document.body.style.backgroundColor = "#ff0000";
     console.log(this.uploadedFile)
     

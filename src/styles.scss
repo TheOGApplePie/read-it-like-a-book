@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@font-face {
+    font-family: satisfy;
+    src: url('assets/fonts/Satisfy-Regular.ttf');
+};
+:root{
+    --pickled-Bluewood-dark: #2b3d4f;
+    --pickled-Bluewood-light:#354a5f;
+    --danube: #5298c7;
+    --cinnabar:#e74d3c;
+    --buttercup: #ffd324;
+}

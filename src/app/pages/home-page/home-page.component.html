@@ -1,11 +1,29 @@
-<section>
-    <h1>Get started by uploading your source by clicking the upload button! Or paste it in the textarea below!</h1>
-</section>
-<section>
-    <form [formGroup]="contentForm" action="post" (ngSubmit)="onSubmit()">
-        <label for="upload-file">Upload your file here... 
-        <input (change)="handleFile($event)" formControlName="uploadedFile" type="file" name="upload-file" id="upload-file" accept=".pdf, .rtf, .txt"></label>
-        <textarea #pastedText formControlName="pastedText" name="pasted-text" id="pasted-text" cols="100" rows="10" placeholder="...Or you can paste the raw text here!"></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</section>
+<div class="home-page">
+    <section class="title d-flex justify-content-center align-items-center">
+        <h1>Read It Like A Book</h1>
+    </section>
+    <section class="main-form d-flex justify-content-center align-items-center pt-5">
+        <div class="container py-4">
+            <div class="row">
+            <div class="col-6">
+                    <h2>Get started by uploading your source by clicking the upload button! Or paste it in the textarea below!</h2>
+            </div>        
+            <div class="col-6">
+                    <form class="mx-1"[formGroup]="contentForm" action="post" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <label for="upload-file" class="upload-file-link fw-bolder">Upload your file by clicking here... 
+                                <input (change)="handleFile($event)" hidden formControlName="uploadedFile" type="file" name="upload-file" id="upload-file" accept=".pdf, .rtf, .txt"></label>
+                        </div>
+                        <div class="row py-2">
+                            <textarea #pastedText formControlName="pastedText" name="pasted-text" id="pasted-text" placeholder="...Or you can paste the raw text here!"></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+    

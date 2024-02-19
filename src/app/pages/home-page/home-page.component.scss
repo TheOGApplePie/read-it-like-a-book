@@ -1,0 +1,35 @@
+.home-page{
+    height: 100dvh;
+    background-color: var(--cinnabar);
+}
+section.title{
+    height: 150px;
+    h1{
+        color: var(--buttercup);
+        font-family: 'satisfy';
+    }
+}
+section.main-form{
+    .container{
+        border-radius: 7px;
+        border: 2px solid var(--buttercup);
+        width: 710px;
+        h2{
+            color: var(--buttercup);
+        }
+        .col-6:nth-of-type(1){
+            margin-right: 0px;
+            border-right: 2px solid var(--buttercup);
+        }
+        .upload-file-link{
+            color: var(--buttercup);
+        }
+        .upload-file-link:hover{
+            cursor: pointer;
+        }
+        textarea{
+            resize: none;
+            height: 250px;
+        }
+    }
+}
